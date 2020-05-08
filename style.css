@@ -1,0 +1,45 @@
+body{
+    margin:0;
+  }
+
+  h1 {
+    font-size: 45px;
+    text-align: center;
+    border-bottom:10px solid blueviolet;
+    margin:0;
+    padding:20px;
+    background-color: aquamarine;
+  
+  }
+  
+  ul{
+    width:200px;
+    margin:0;
+    padding:20px;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr
+    
+  }
+  #grid ul{
+    padding-left:40px;
+    
+  }
+  #grid #article{
+    padding-top: 10px;
+    padding-left: 50px;
+  }
+ .panel-footer{
+  background-color: aquamarine;
+  color:red;
+  font-weight:bold;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+ }
