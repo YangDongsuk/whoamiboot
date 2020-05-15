@@ -1,0 +1,125 @@
+#title{
+    text-align: center;
+}
+.content{
+    margin: 10%;
+    padding: 0 10%;        
+
+}
+img{
+    position: relative;
+    width: 100px;
+    grid-column: 1;
+    border-radius: 100%;
+    border:2px solid black;
+    right: 50px;
+    bottom: 40px;
+    z-index: 10;
+
+}
+body{
+    background-color: seagreen;
+}
+.card{
+    border-radius: 10%;
+    border:3px solid blue;
+    position: relative;
+    display: grid;
+    grid-template-columns: 60px auto 30px;
+    background-color: aquamarine;
+    width: 40%;
+    margin-bottom: 10%;
+    box-shadow: 0px 0px 6px 2px green inset;
+    transition: 0.5s;
+}
+.card:hover{
+    background-color: purple;
+    box-shadow: none;
+    color: red;
+}
+.date{
+    top: -10px;
+    color: seashell;
+    border-radius: 20%;
+    border:5px solid pink;
+    width: 70%;
+    height: 30%;
+    background-color: red;
+    position: relative;
+
+    grid-column: 2;
+
+    z-index: 5;
+    box-shadow:  palevioletred 6px 6px;
+
+}
+.what{
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: xx-large;
+    position: relative;
+
+    grid-column: 2;
+    top: -20px;
+
+}
+.where{
+    position: relative;
+
+    grid-column: 2;
+
+}
+.text{
+    position: relative;
+
+    grid-column: 2;
+
+}
+.dot{
+    position: absolute;
+    width: 20px;
+    height:20px;
+    background-color: black;
+    right: -28%;
+    top: 40%;
+    border-radius: 100%;
+
+}
+
+.line{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-left: -2.5px;
+    width: 5px;
+    height: 190%;
+    background-color: black;
+
+}
+.card:nth-child(even){
+    margin-left: 60%;
+
+}
+.card:nth-child(even) .dot{
+    left: -28%;
+}
+#tothetop{
+    position: fixed;
+    left: 0px;
+    bottom: 100px;
+}
+@media(max-width:1000px){
+    .dot, .line{
+        display:none;
+    }
+    .card{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .card:nth-child(even){
+        margin-left: 10%;
+    }
+
+}
+.buttons{
+    text-align: center;
+}
