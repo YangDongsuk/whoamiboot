@@ -21,6 +21,8 @@
   <title>Web1-html</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script src="color.js"></script>
+
 
 </head>
 
@@ -37,14 +39,18 @@
     <ul class="nav nav-pills">
       <li role="1대 컴퓨터"><a href="1.html">1대 컴퓨터</a></li>
       <li role="2대 컴퓨터"><a href="2.html">2대 컴퓨터</a></li>
-      <li role="3대 컴퓨터 class="active""><a href="3.html">3대 컴퓨터</a></li>
+      <li role="3대 컴퓨터" class='active'><a href="3.html">3대 컴퓨터</a></li>
       <li role="3대 컴퓨터"  ><a href="new.html">???</a></li>
       <li role="타임라인"  ><a href="timeline.html">타임라인</a></li>
+      <li role="시계"  ><a href="time.html">시계</a></li>
+
 
 
     </ul>
   
   <div id="article">
+    <input type="button" value="night" onclick="nightDayHandler(this);">
+
     <h2> 저의 세번째 컴퓨터 입니다. </h2>
     <img src="3.jpg" width="30%">
 
